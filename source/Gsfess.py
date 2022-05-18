@@ -240,7 +240,7 @@ def changfangti_biaomianji_tkinter():
 # 长方体主窗口
 
 def changfangti_tkinter():
-    xuanze1_changfangti = ttk.Tk()
+    xuanze1_changfangti = tk.Tk()
     xuanze1_changfangti.title("长方体")
     xuanze1_changfangti1 = ttk.Button(xuanze1_changfangti , text = "          表面积         " , command = changfangti_biaomianji_tkinter)
     xuanze1_changfangti1.pack(side = "left")
