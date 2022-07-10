@@ -5,7 +5,7 @@ import tkinter.ttk as ttk
 
 def msgbox():
     tkinter.messagebox.showinfo("关于" , """本软件由张峻熙制作,在GitHub上开源
-版本:Gsfess for windows GUI 1.0""")
+版本:Gsfess for windows GUI 1.1""")
 
 def quit(quit):
     top.quit()
@@ -57,10 +57,36 @@ def gongshichaxun_tkinter():
 
 
 
-"""
-正方体的工作已经全部完成
-"""
 
+# 园锥体积窗口
+
+def yuanzhui_tiji():
+    yz_tj = tk.Tk()
+    yz_tj.title("圆锥体积")
+    yz_tiji_text = ttk.Label(yz_tj , text = "请输入半径：")
+    yz_tiji_text.grid(column = 0 , row = 1)
+    yz_tiji_Entry = ttk.Entry(yz_tj)
+    yz_tiji_Entry.grid(column = 1 , row = 1)
+    # 
+    yz_tiji_text2 = ttk.Label(yz_tj , text = "请输入高：")
+    yz_tiji_text2.grid(column = 0 , row = 2)
+    yz_tiji_Entry2 = ttk.Entry(yz_tj)
+    yz_tiji_Entry2.grid(column = 1 , row = 2)
+    # 
+    def yz_tj_js():
+        yuanzhui_gao = float(yz_tiji_Entry2.get())
+        yuanzhui_banjing = float(yz_tiji_Entry.get())
+        yuanzhui_jieguo = 3.14 * yuanzhui_banjing * yuanzhui_banjing * yuanzhui_gao / 3
+        AAAA2 = ttk.Label(yz_tj , text = "结果是：")
+        AAAA2.grid(column = 1 , row = 3)
+        CCCC2 = ttk.Label(yz_tj , text = yuanzhui_jieguo)
+        CCCC2.grid(column = 2 , row = 3)
+    
+    zhengfangti_tiji_Button = ttk.Button(yz_tj , text = "计算" , command = yz_tj_js)
+    zhengfangti_tiji_Button.grid(column = 0 , row = 3)
+
+    yz_tj.mainloop()
+    
 
 # 正方体体积的窗口
 def zhengfangti_tiji():
@@ -519,6 +545,8 @@ Button2 = ttk.Button(top , text = "长方体" , command = changfangti_tkinter)
 Button2.pack()
 Button3 = ttk.Button(top , text = "圆柱体" , command = yuanzhu_tkinter)
 Button3.pack()
+Button5 = ttk.Button(top , text = "圆锥" , command= yuanzhui_tiji)
+Button5.pack()
 text55 = ttk.Label(top , text = "-----------------------------------------------------")
 text55.pack()
 B = ttk.Label(top , text = "平面图形")
