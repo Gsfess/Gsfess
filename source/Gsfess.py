@@ -1,6 +1,19 @@
 import tkinter as tk
 import tkinter.messagebox
 import tkinter.ttk as ttk
+from turtle import left
+import time
+
+# 启动画面
+start = tk.Tk()
+start.geometry("500x100+700+500")
+start.title("Gsfess")
+start_Label = tk.Label(start, text= "Gsfess", font= ("Arial", 50))
+start_Label.place(x= 0, y= 0)
+start_Label_2 = tk.Label(start, text= "正在启动……", font= ("Arial", 10))
+start_Label_2.place(x= 420, y= 80)
+start.after(2000, start.destroy)
+start.mainloop()
 
 
 def msgbox():
@@ -482,6 +495,7 @@ def sanjiaoxing_tkinter():
 # 主程序
 top = tk.Tk()
 top.title("Gsfess")
+top.geometry("500x600+700+200")
 
 # 这是程序的一个顶部菜单，记录一下过程
 
