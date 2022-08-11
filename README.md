@@ -1,7 +1,7 @@
 # 适用于Windows的Gsfess
 这是一个小学生几何计算的使用工具，是家长检查作业的好帮手  
 ## 最近更新：  
-#### 1.1版本 增加了圆锥立体图形 
+#### 1.2版本 增加了启动画面 
 ###### 好久没更新了，来 ~~刷一下版本号~~ 更新一下
 ![界面图片](https://github.com/Zhang6300/Gsfess-for-windows/blob/main/2.png?raw=true)
   
